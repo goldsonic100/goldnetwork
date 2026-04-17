@@ -5,7 +5,6 @@
     <title>Gold Network</title>
 
 ```
-<!-- Font -->
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
 
 <style>
@@ -18,14 +17,19 @@
     }
 
     header {
-        padding: 60px 20px;
-        background: linear-gradient(black, #111);
+        padding: 80px 20px;
     }
 
     h1 {
         color: gold;
         font-size: 3em;
-        animation: goldGlow 2.5s infinite ease-in-out;
+        animation: glow 2.5s infinite ease-in-out;
+    }
+
+    @keyframes glow {
+        0% { text-shadow: 0 0 5px gold; }
+        50% { text-shadow: 0 0 20px gold; }
+        100% { text-shadow: 0 0 5px gold; }
     }
 
     .btn {
@@ -38,52 +42,26 @@
         font-weight: bold;
         border-radius: 6px;
         transition: 0.3s;
-        box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
     }
 
     .btn:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+        transform: scale(1.1);
+        background: #ffd700;
     }
 
     section {
-        padding: 40px 20px;
+        padding: 50px 20px;
         animation: fadeUp 1s ease-out;
     }
 
-    .feature {
-        margin: 20px 0;
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
     }
 
     footer {
         padding: 20px;
-        font-size: 0.8em;
         color: gray;
-    }
-
-    /* 🌟 Gold glow animation */
-    @keyframes goldGlow {
-        0% {
-            text-shadow: 0 0 5px #ffd700, 0 0 10px #b8860b;
-        }
-        50% {
-            text-shadow: 0 0 15px #ffd700, 0 0 25px #ffcc00;
-        }
-        100% {
-            text-shadow: 0 0 5px #ffd700, 0 0 10px #b8860b;
-        }
-    }
-
-    /* 🌌 Fade animation */
-    @keyframes fadeUp {
-        from {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
     }
 </style>
 ```
@@ -106,12 +84,14 @@
 
 <section>
     <h2>Not your average survival server.</h2>
-    <p>Gold Network is built for players who want:</p>
-    <p>⚔️ Real PvP competition<br>
-    🧠 Strategy that actually matters<br>
-    💰 A risk-based economy</p>
 
 ```
+<p>Gold Network is built for players who want:</p>
+
+<p>⚔️ Real PvP competition</p>
+<p>🧠 Strategy that actually matters</p>
+<p>💰 A risk-based economy</p>
+
 <p><strong>Every move has consequences.</strong></p>
 ```
 
@@ -119,15 +99,14 @@
 
 <section>
     <h2>🏹 FEATURE HIGHLIGHT</h2>
-    <h3>Bounty SMP — Our Core Gamemode</h3>
 
 ```
-<div class="feature">
-    <p>• Start with bounty</p>
-    <p>• Kill players to gain more</p>
-    <p>• Grow stronger the richer you get</p>
-    <p>• Lose it all… and you’re out</p>
-</div>
+<h3>Bounty SMP — Our Core Gamemode</h3>
+
+<p>• Start with bounty</p>
+<p>• Kill players to gain more</p>
+<p>• Grow stronger the richer you get. Buy stuff with bounty in the shop or auction.</p>
+<p>• Lose it all… and you’re out</p>
 
 <p><strong>💀 High Risk. High Reward.</strong></p>
 
@@ -140,10 +119,10 @@
     <h2>Build. Ally. Betray. Conquer.</h2>
 
 ```
-<p>🏰 Build powerful bases<br>
-🤝 Form alliances<br>
-🔥 Start wars<br>
-🪤 Set traps</p>
+<p>🏰 Build powerful bases</p>
+<p>🤝 Form alliances</p>
+<p>🔥 Start wars</p>
+<p>🪤 Set traps</p>
 
 <p><strong>Trust no one.</strong></p>
 
@@ -168,4 +147,3 @@ function copyIP() {
 
 </body>
 </html>
-
