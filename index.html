@@ -88,7 +88,36 @@
 
 <body>
     <nav class="navbar">
-  <a href="index.html">IP</a>
+        <section id="ip">
+  <h1>🌐 IP TAB — CONNECT</h1>
+
+  <h2>JOIN GOLD NETWORK</h2>
+  <p>Ready to enter the fight?</p>
+
+  <hr>
+
+  <h3>🖥️ SERVER IP</h3>
+  <p onclick="copyIP()" style="cursor:pointer; font-size:20px;">
+    goldnetwork.secure.pebble.host (click to copy)
+  </p>
+
+  <hr>
+
+  <h3>🎮 VERSION</h3>
+  <p>Supports: 1.20+ | Java Edition</p>
+
+  <hr>
+
+  <h3>🚀 HOW TO JOIN</h3>
+  <ol>
+    <li>Open Minecraft</li>
+    <li>Click Multiplayer</li>
+    <li>Click Add Server</li>
+    <li>Paste: goldnetwork.secure.pebble.host</li>
+    <li>Click Join Server</li>
+  </ol>
+</section>
+  <a href="#ip">IP</a>
   <a href="bounty-smp.html">Bounty SMP</a>
   <a href="about.html">About Us</a>
   <a href="store.html">Store</a>
@@ -173,6 +202,12 @@
 function copyIP() {
     navigator.clipboard.writeText("goldnetwork.secure.pebble.host");
     alert("IP copied!");
+}
+</script>
+    <script>
+function copyIP() {
+  navigator.clipboard.writeText("goldnetwork.secure.pebble.host");
+  alert("IP copied!");
 }
 </script>
 
