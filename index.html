@@ -1,116 +1,93 @@
 <!DOCTYPE html>
+
 <html>
 <head>
     <title>Gold Network</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: black;
-            color: white;
-            text-align: center;
-        }
 
-        header {
-            padding: 60px 20px;
-            background: linear-gradient(black, #111);
-        }
+```
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
 
-        h1 {
-            color: gold;
-            font-size: 3em;
-        }
+<style>
+    body {
+        margin: 0;
+        font-family: 'Orbitron', Arial, sans-serif;
+        color: white;
+        text-align: center;
+        background: radial-gradient(circle at top, #111 0%, #000 70%);
+    }
 
-        .btn {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 24px;
-            background: gold;
-            color: black;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 6px;
-        }
+    header {
+        padding: 60px 20px;
+        background: linear-gradient(black, #111);
+    }
 
-        section {
-            padding: 40px 20px;
-        }
+    h1 {
+        color: gold;
+        font-size: 3em;
+        animation: goldGlow 2.5s infinite ease-in-out;
+    }
 
-        .feature {
-            margin: 20px 0;
-        }
+    .btn {
+        display: inline-block;
+        margin: 10px;
+        padding: 12px 24px;
+        background: gold;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 6px;
+        transition: 0.3s;
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+    }
 
-        footer {
-            padding: 20px;
-            font-size: 0.8em;
-            color: gray;
-        }
-    </style>
+    .btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    }
+
+    section {
+        padding: 40px 20px;
+        animation: fadeUp 1s ease-out;
+    }
+
+    .feature {
+        margin: 20px 0;
+    }
+
+    footer {
+        padding: 20px;
+        font-size: 0.8em;
+        color: gray;
+    }
+
     /* 🌟 Gold glow animation */
-@keyframes goldGlow {
-    0% {
-        text-shadow: 0 0 5px #ffd700, 0 0 10px #b8860b;
+    @keyframes goldGlow {
+        0% {
+            text-shadow: 0 0 5px #ffd700, 0 0 10px #b8860b;
+        }
+        50% {
+            text-shadow: 0 0 15px #ffd700, 0 0 25px #ffcc00;
+        }
+        100% {
+            text-shadow: 0 0 5px #ffd700, 0 0 10px #b8860b;
+        }
     }
-    50% {
-        text-shadow: 0 0 15px #ffd700, 0 0 25px #ffcc00;
+
+    /* 🌌 Fade animation */
+    @keyframes fadeUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
-    100% {
-        text-shadow: 0 0 5px #ffd700, 0 0 10px #b8860b;
-    }
-}
+</style>
+```
 
-/* Apply glow to main title */
-h1 {
-    color: gold;
-    font-size: 3em;
-    animation: goldGlow 2.5s infinite ease-in-out;
-}
-
-/* ✨ Soft animated background glow */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: white;
-    text-align: center;
-    background: radial-gradient(circle at top, #111 0%, #000 70%);
-}
-
-/* 🟡 Button glow effect */
-.btn {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 24px;
-    background: gold;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    transition: 0.3s;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
-}
-
-.btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
-}
-
-/* 🌌 Subtle floating effect for sections */
-section {
-    padding: 40px 20px;
-    animation: fadeUp 1s ease-out;
-}
-
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-   </style>    
 </head>
 
 <body>
@@ -120,8 +97,11 @@ section {
     <p>The ultimate Minecraft PvP strategy experience.</p>
     <p>👉 Compete. Strategize. Dominate.</p>
 
-    <a href="#ip" class="btn">PLAY NOW</a>
-    <a href="#" class="btn">JOIN DISCORD</a>
+```
+<a href="#ip" class="btn">PLAY NOW</a>
+<a href="#" class="btn">JOIN DISCORD</a>
+```
+
 </header>
 
 <section>
@@ -131,42 +111,61 @@ section {
     🧠 Strategy that actually matters<br>
     💰 A risk-based economy</p>
 
-    <p><strong>Every move has consequences.</strong></p>
+```
+<p><strong>Every move has consequences.</strong></p>
+```
+
 </section>
 
 <section>
     <h2>🏹 FEATURE HIGHLIGHT</h2>
     <h3>Bounty SMP — Our Core Gamemode</h3>
 
-    <div class="feature">
-        <p>• Start with bounty</p>
-        <p>• Kill players to gain more</p>
-        <p>• Grow stronger the richer you get</p>
-        <p>• Lose it all… and you’re out</p>
-    </div>
+```
+<div class="feature">
+    <p>• Start with bounty</p>
+    <p>• Kill players to gain more</p>
+    <p>• Grow stronger the richer you get</p>
+    <p>• Lose it all… and you’re out</p>
+</div>
 
-    <p><strong>💀 High Risk. High Reward.</strong></p>
+<p><strong>💀 High Risk. High Reward.</strong></p>
 
-    <a href="#" class="btn">LEARN MORE</a>
+<a href="#" class="btn">LEARN MORE</a>
+```
+
 </section>
 
 <section>
     <h2>Build. Ally. Betray. Conquer.</h2>
 
-    <p>🏰 Build powerful bases<br>
-    🤝 Form alliances<br>
-    🔥 Start wars<br>
-    🪤 Set traps</p>
+```
+<p>🏰 Build powerful bases<br>
+🤝 Form alliances<br>
+🔥 Start wars<br>
+🪤 Set traps</p>
 
-    <p><strong>Trust no one.</strong></p>
+<p><strong>Trust no one.</strong></p>
 
-    <a href="#" class="btn">JOIN THE SERVER</a>
-    <a href="#" class="btn">TERMS OF SERVICE</a>
+<a href="#" class="btn">JOIN THE SERVER</a>
+<a href="#" class="btn">TERMS OF SERVICE</a>
+```
+
 </section>
 
 <footer>
-    <p id="ip">Server IP: goldnetwork.secure.pebble.host</p>
+    <p id="ip" onclick="copyIP()" style="cursor:pointer;">
+        Server IP: goldnetwork.secure.pebble.host (click to copy)
+    </p>
 </footer>
+
+<script>
+function copyIP() {
+    navigator.clipboard.writeText("goldnetwork.secure.pebble.host");
+    alert("IP copied!");
+}
+</script>
 
 </body>
 </html>
+
