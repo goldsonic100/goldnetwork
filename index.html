@@ -46,6 +46,71 @@
             color: gray;
         }
     </style>
+    /* 🌟 Gold glow animation */
+@keyframes goldGlow {
+    0% {
+        text-shadow: 0 0 5px #ffd700, 0 0 10px #b8860b;
+    }
+    50% {
+        text-shadow: 0 0 15px #ffd700, 0 0 25px #ffcc00;
+    }
+    100% {
+        text-shadow: 0 0 5px #ffd700, 0 0 10px #b8860b;
+    }
+}
+
+/* Apply glow to main title */
+h1 {
+    color: gold;
+    font-size: 3em;
+    animation: goldGlow 2.5s infinite ease-in-out;
+}
+
+/* ✨ Soft animated background glow */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    background: radial-gradient(circle at top, #111 0%, #000 70%);
+}
+
+/* 🟡 Button glow effect */
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.4);
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+}
+
+/* 🌌 Subtle floating effect for sections */
+section {
+    padding: 40px 20px;
+    animation: fadeUp 1s ease-out;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    
 </head>
 
 <body>
